@@ -1,0 +1,717 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --pseudo-backgroundcolor: #fff;
+  --check-primary: #fff;
+}
+body {
+  font-size: 62.5%;
+}
+.header {
+  background: #194d82;
+  height: 100vh;
+}
+.nav-home {
+  background: url(Top_background_.png);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+  height: 100%;
+}
+nav {
+  height: 5.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#check {
+  display: none;
+}
+.menu-icon {
+  visibility: hidden;
+}
+nav p {
+  display: inline-block;
+  color: #fff;
+  font-size: 200%;
+  font-weight: 600;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  display: inline-block;
+  line-height: 5.5rem;
+  width: 5.5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-left: 2%;
+  align-items: center;
+}
+
+.li-btn {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.05rem;
+
+  font-weight: 600;
+}
+.li-btn {
+  color: #fff;
+  text-decoration: none;
+}
+.li-btn:hover {
+  cursor: pointer;
+}
+.li-btn::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--check-primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.li-btn:hover::after {
+  transform: scaleY(1.1);
+  cursor: pointer;
+}
+/*Scroll bar*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #194d82;
+  border-radius: 6px;
+}
+
+/* Home section*/
+
+.home {
+  display: flex;
+  width: 100%;
+}
+.details-home {
+  display: block;
+  width: 60%;
+  padding: 15rem 8rem;
+}
+.details-home h2 {
+  color: #fff;
+  font-size: 300%;
+}
+.details-home h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 200%;
+  padding: 4% 0;
+}
+.btn-home {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 125%;
+  font-weight: 550;
+  background-color: #194d82;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border: 1px solid #194d82;
+  transition: all 0.6s;
+  border-radius: 6px;
+}
+.btn-home:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: #194d82;
+  font-size: 125%;
+  background-color: #ffffff;
+  font-weight: 550;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border: 1px solid #ffffff;
+  transition: all 0.6s;
+  border-radius: 6px;
+}
+.bot-image {
+  display: block;
+  width: 40%;
+  padding: 8rem 1rem;
+}
+.bot-image img {
+  width: 75%;
+}
+
+/*About Us Section*/
+
+.about-us {
+  height: 80vh;
+  display: block;
+}
+.about-txt-cnt {
+  display: block;
+  width: 60%;
+  margin-top: 1.5rem;
+}
+.a-img-cnt {
+  display: block;
+  width: 50%;
+}
+.about-text {
+  display: block;
+  padding: 3rem 0 0 5rem;
+  width: 75%;
+}
+.a-heading {
+}
+.a-heading h2 {
+  display: inline-block;
+  margin: 1rem 5rem;
+  font-size: 200%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #194d82;
+  border-left: #194d82 4px solid;
+  padding-left: 1rem;
+}
+.about-us-cnt {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+}
+
+.about-text h3 {
+  font-size: 200%;
+}
+.about-text p {
+  font-size: 160%;
+  margin-top: 0.5rem;
+}
+.about-img {
+  width: 100%;
+}
+
+/*Workshops*/
+.w-heading {
+  display: inline-block;
+  margin: 2rem 10rem;
+  font-size: 200%;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #194d82;
+  border-left: #194d82 4px solid;
+  padding-left: 1rem;
+}
+.workshops {
+  background-image: url("Workshop background.png");
+  background-size: cover;
+  height: 100vh;
+}
+.w-heading {
+  display: inline-block;
+}
+.ws-container {
+  margin: 4rem 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.w-box {
+  width: 20%;
+  padding: 4rem 0.8rem;
+  height: auto;
+  background-color: #fff;
+  border: 2px solid #39cbff;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0.5rem 1.5rem;
+}
+.w-box h3 {
+  font-size: 180%;
+  padding-top: 2rem;
+}
+.w-box p {
+  font-size: 150%;
+  padding-top: 0.8rem;
+}
+
+/*Alliagtors div*/
+
+.alligator-div {
+  background-image: url("Alligators_background.png");
+  background-size: cover;
+}
+.alligators-container {
+  display: flex;
+  padding: 2.5rem 3rem;
+  justify-content: center;
+}
+.al-logo {
+  padding: 5rem 0rem 0 5rem;
+}
+.al-logo img {
+  width: 30%;
+}
+.division {
+  display: block;
+  width: 30%;
+  margin: 3rem;
+  position: relative;
+  text-align: center;
+  height: 50vh;
+  border-radius: 20px;
+  padding: 2.5rem 2.5rem;
+  background: linear-gradient(
+    33.36deg,
+    #1f2a2e 0.66%,
+    #55a8f7 99.99%,
+    #82c1ff 100%
+  );
+}
+.division::after {
+  content: url("combat_bot.png");
+  top: 12rem;
+  right: -5rem;
+  position: absolute;
+  transform: scale(0.9);
+}
+.division:nth-child(2)::after {
+  content: url("drone.png");
+  top: 10rem;
+  right: -6rem;
+  position: absolute;
+  transform: scale(0.9);
+}
+.division h3 {
+  color: #fff;
+  font-size: 250%;
+}
+.division p {
+  color: #fff;
+  font-size: 150%;
+  margin: 1.5rem 0 0 0;
+}
+/*Achievemnts Section*/
+.achievements {
+  height: 100vh;
+}
+
+/*Contact Us Section*/
+.contact_us {
+  height: 80vh;
+  display: flex;
+  background-color: rgba(201, 201, 201, 0.2);
+}
+.contact-left {
+  display: block;
+  width: 50%;
+  background-image: url("Contact_us_background.png");
+  background-size: cover;
+  text-align: center;
+}
+.contact-left h3 {
+  color: #fff;
+  font-size: 400%;
+  padding-top: 4rem;
+  text-transform: uppercase;
+}
+
+.form {
+  display: block;
+}
+
+.form h3 {
+  padding: 3rem 0 0 5rem;
+  font-size: 250%;
+}
+.form form {
+  display: block;
+  padding: 2rem 0 0 5rem;
+}
+
+.form form label {
+  font-size: 165%;
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.form form input {
+  width: 20rem;
+  outline: none;
+  padding: 0.3rem 0 0.3rem 0;
+  border: none;
+  text-align: left;
+  background: transparent;
+  font-size: 125%;
+  border-bottom: 1px solid #232323;
+}
+.form form button {
+  background-color: #194d82;
+  padding: 0.3rem 3rem 0.3rem 3rem;
+  border: 2px solid #194d82;
+  border-radius: 0.3rem;
+  color: #fff;
+  display: inline-block;
+  transition: all 0.5s;
+  margin-top: 2rem;
+}
+.form form button:hover {
+  background-color: #ffffff;
+  padding: 0.3rem 3rem 0.3rem 3rem;
+  border: 2px solid #194d82;
+  border-radius: 0.3rem;
+  color: #194d82;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.social {
+  margin-top: 16%;
+  margin-left: 18%;
+  text-align: left;
+}
+.social a {
+  color: #232323;
+  padding: 0rem 0 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+/*Responsive Design*/
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 62.5%;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+  }
+
+  .logo {
+  }
+
+  nav p {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  .nav-logo {
+    display: inline-block;
+    line-height: 60px;
+    width: 35px;
+  }
+
+  .nav-list {
+  }
+
+  .nav-list li {
+    color: white;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 50%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  nav {
+    height: 4rem;
+    display: flex;
+    width: 100%;
+  }
+  .nav-home {
+    background-image: url("Top background_mobile.png");
+  }
+  nav p {
+    font-size: 80%;
+    font-weight: 500;
+    line-height: 4rem;
+  }
+  .nav-list {
+    visibility: hidden;
+    width: 0;
+  }
+  .logo {
+    display: flex;
+    float: left;
+  }
+  .nav-logo {
+    display: inline-block;
+    line-height: 4rem;
+    width: 3.5rem;
+  }
+  .logo p {
+    font-size: 150%;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .details-home {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.3rem 2rem;
+    text-align: center;
+  }
+  .btn-home {
+    display: inline-block;
+    font-size: 120%;
+    font-weight: 550;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+  }
+  .bot-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
+    padding: 0;
+  }
+  .bot-image img {
+    width: 55%;
+  }
+  .about-us {
+    height: auto;
+    width: 100%;
+  }
+  .about-us-cnt {
+    display: block;
+    width: 100%;
+  }
+  .about-txt-cnt {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .a-img-cnt {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+  .a-heading {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .a-heading h2 {
+    display: block;
+    font-size: 200%;
+    width: 100%;
+  }
+  .about-us-cnt {
+    width: 100%;
+    margin: 4rem 0.5rem;
+    padding: 0%;
+  }
+
+  .about-text h3 {
+    font-size: 220%;
+  }
+  .about-text p {
+    font-size: 180%;
+  }
+  .a-img-cnt {
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 2rem;
+  }
+  .about-img {
+    width: 80%;
+  }
+
+  .w-heading {
+    display: inline-block;
+    text-align: center;
+    font-size: 200%;
+  }
+  .workshops {
+    height: auto;
+  }
+  .w-heading {
+    display: block;
+    width: 40%;
+    padding: 0 0 0 0.5rem;
+    margin: 4rem 0 0 25%;
+  }
+  .ws-container {
+    margin: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .w-img img {
+    width: 30%;
+  }
+  .w-box {
+    width: 80%;
+    margin: 1rem 0 0 0;
+    padding: 2rem 0.5rem;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  .w-box h3 {
+    font-size: 170%;
+    padding-top: 2rem;
+  }
+  .w-box p {
+    font-size: 150%;
+    padding-top: 0.8rem;
+  }
+  .alligator-div {
+    background-image: url("Alligators_background_mobile.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  .alligators-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .al-logo {
+    padding: 0;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .al-logo img {
+    width: 50%;
+  }
+  .division {
+    display: block;
+    width: 90%;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    height: 40vh;
+    border-radius: 20px;
+    padding: 2.5rem 2.5rem;
+  }
+  .division::after {
+    content: url("combat_bot.png");
+    top: 12rem;
+    right: -5rem;
+    transform: scale(0.7);
+    position: absolute;
+  }
+  .division:nth-child(2)::after {
+    content: url("drone.png");
+    top: 6.5rem;
+    right: -8rem;
+    transform: scale(0.65);
+    position: absolute;
+  }
+  .division h3 {
+    font-size: 250%;
+  }
+  .division p {
+    font-size: 150%;
+  }
+  .contact_us {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(201, 201, 201, 0.2);
+  }
+  .contact-left {
+    display: block;
+    width: 100%;
+    padding: 5rem;
+  }
+  .contact-left h3 {
+    color: #fff;
+    font-size: 400%;
+    padding-top: 0;
+    text-transform: uppercase;
+  }
+
+  .form {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .form h3 {
+    display: block;
+    font-size: 250%;
+    margin: 2rem 0 0 0;
+    padding: 0;
+  }
+  .form form {
+    display: block;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+
+  .form form label {
+    font-size: 185%;
+    margin-top: 1.5rem;
+  }
+  .form form input {
+    width: 20rem;
+    font-size: 170%;
+  }
+  .form form button {
+    margin-top: 3rem;
+    display: inline-block;
+  }
+  .social {
+    margin-top: 16%;
+    margin-left: 0;
+    text-align: left;
+    text-align: center;
+  }
+  .social a {
+    color: #232323;
+    padding: 0rem 0.5 0 0rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    font-size: 40%;
+  }
+}
